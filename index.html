@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Дипломный проект</title>
+        <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-regular.woff2" as="font">     <!-- значение preload атрибута rel в элементе <link> посылает браузеру запрос на ранюю загрузку этого элемента, указанного в ссылке href -->
+        <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-500.woff2" as="font">         <!-- preload гарантирует, что нужные ресурсы будут загружены заранее, перед их использованием, это в свою очередь не заблокирует отрисовку страницы -->
+        <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-700.woff2" as="font">         <!-- атрибут as указывает на тип ресурса, также позволяет сохранить в кэше этот ресурс для дальнейшего использования -->
+        <link rel="preload" href="fonts/roboto-v20-latin_cyrillic-900.woff2" as="font">
+        <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/icon-font/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/media.min.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/script.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    </head>
+
+    <body>
+        <a href="#" class="to-top">Наверх</a>
+        <header class="container">
+            <div class="header__container block_flex">
+                
+                <button type="button" class="menu-burger_header_mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="main-menu_header_desktop">
+
+                    <div class="main-menu__container">
+                        <nav class="menu_desktop">
+                            <ul class="menu__list_desktop">
+                                <li class="menu__item_desktop"><a class="menu__link_desktop" href="#skill">Услуги</a></li>
+                                <li class="menu__item_desktop"><a class="menu__link_desktop" href="#portfolio">Портфолио</a></li>
+                                <li class="menu__item_desktop"><a class="menu__link_desktop" href="#price">Стоимость</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+
+                <div class="for-communication block_flex">
+                    <a href="tel:+7(499)995-77-55" class="for-communication__link_tel">+7 (499) 995-77-55</a>
+                    <button type="submit" class="for-communication__button_desktop call-button popup_call_open">Заказать звонок</button>
+                    <button type="submit" class="for-communication__button_mobile popup_call_open"></button>
+                </div>
+            </div>
+
+            <div class="main-menu_header_mobile">
+                <div class="main-menu__container">
+                	<button type="button" class="main-menu__button_exit">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    
+                    <nav class="menu_mobile">
+                        <ul class="menu__list_mobile">
+                            <li class="menu__item_mobile"><a class="menu__link_mobile" href="#skill">Услуги</a></li>
+                            <li class="menu__item_mobile"><a class="menu__link_mobile" href="#portfolio">Портфолио</a></li>
+                            <li class="menu__item_mobile"><a class="menu__link_mobile" href="#price">Стоимость</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            
+            <section class="title-part container block_flex">
+
+                    <div class="parallaxs">
+                        <ul class="parallax__list">
+                            <li data-depth="0.30">
+                                <div class="parallax__element parallax__element_1">
+                                    <span>{ }</span>
+                                </div>
+                            </li>
+
+                            <li data-depth="0.30">
+                                <div class="parallax__element parallax__element_2">
+                                    <span>#</span>
+                                </div>
+                            </li>
+
+                            <li data-depth="0.30">
+                                <div class="parallax__element parallax__element_3">
+                                    <span>&lt;/&gt;</span>
+                                </div>
+                            </li>
+
+                            <li data-depth="0.30">
+                                <div class="parallax__element parallax__element_4">
+                                    <span>&lt;div&gt;</span>
+                                </div>
+                            </li>
+
+                            <li data-depth="0.30">
+                                <div class="parallax__element parallax__element_5">
+                                    <span>&lt;div&gt;</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="title-part_left-side_desktop">
+                        <h1 class="title-part__header">Дмитрий Алексеев</h1>
+                        <h3 class="title-part__subtitle">Frontend&#8209;разработчик и веб&#8209;верстальщик</h3>
+                        <button type="submit" class="title-part__button order-button popup_order_open">Узнать больше</button>
+                    </div>
+
+                    <div class="title-part_right-side">
+                        <div class="title-part_right-side__main-imagine"></div>
+                    </div>
+                    
+            </section>
+
+                <section class="skill">
+
+                    <div class="container skill__container block_flex">
+                        
+                        <h2 class="section-header skill__header" id="skill">Что я делаю</h2>
+                    
+                        <div class="skill__list block_flex">
+                            <div class="skill__item">
+                                <a class="skill__link" href="#">
+                                    <img src="img/skill/code.png" alt="Вёрстка лендинга">
+
+                                    <span class="skill__text">Вёрстка лендинг-страниц и сайтов любой сложности</span>
+                                </a>
+                            </div>
+
+                            <div class="skill__item">
+                                <a class="skill__link" href="#">
+                                    <img src="img/skill/gadgets.png" alt="Адаптивная вёрстка">
+
+                                    <span class="skill__text">Адаптивная вёрстка под все браузеры и устройства</span>
+                                </a>
+                            </div>
+
+                            <div class="skill__item">
+                                <a class="skill__link" href="#">
+                                    <img src="img/skill/programming.png" alt="Frontend–разработка">
+
+                                    <span class="skill__text">Frontend–разработка и программирование</span>
+                                </a>
+                            </div>
+
+                            <div class="skill__item">
+                                <a class="skill__link" href="#">
+                                    <img src="img/skill/coding.png" alt="Доработка вёрстки">
+
+                                    <span class="skill__text">Исправление и доработка существующей вёрстки</span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="skill__button order-button popup_order_open">Узнать стоимость</button>
+                    </div>
+                    
+                </section>
+
+                <section class="portfolio container">
+
+                    <div class="portfolio__container block_flex">
+
+                        <h2 class="section-header portfolio__header" id="portfolio">Примеры моих работ</h2>
+
+                        <div class="swiper">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="swiper__link" href="#">
+                                            <img src="img/portfolio/site-1.png" alt="Сайт психолога" class="swiper__img_site">
+
+                                            <span class="swiper__span_name">Сайт психолога Веры Антоновой</span>
+                                        </a>
+                                    </div>
+                                    
+
+                                    <div class="swiper-slide">
+                                        <a class="swiper__link" href="#">
+                                            <img src="img/portfolio/site-2.png" alt="Сайт магазина детской одежды" class="swiper__img_site">
+
+                                            <span class="swiper__span_name">Сайт магазина детской одежды</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="swiper__link" href="#">
+                                            <img src="img/portfolio/site-3.png" alt="Сайт магазина Рыболов" class="swiper__img_site">
+
+                                            <span class="swiper__span_name">Сайт магазина &laquo;Рыболов&raquo;</span>
+                                        </a>
+                                    </div>
+    
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            
+                            <div class="swiper__button swiper__button_next"></div>
+                            <div class="swiper__button swiper__button_prev"></div>
+                        </div>
+                        <button type="submit" class="portfolio__button order-button popup_order_open">Заказать проект</button>
+
+                    </div>
+                    
+                </section>
+
+                <section class="price" id="price">
+
+                    <div class="container price__container">
+
+                        <div class="parallaxs">
+                            <ul class="parallax__list">
+                                <li data-depth="0.30">
+                                    <div class="parallax__element_ad parallax__element_1_ad">
+                                        <span>{ }</span>
+                                    </div>
+                                </li>
+
+                                <li data-depth="0.30">
+                                    <div class="parallax__element_ad parallax__element_2_ad">
+                                        <span>#</span>
+                                    </div>
+                                </li>
+
+                                <li data-depth="0.30">
+                                    <div class="parallax__element_ad parallax__element_3_ad">
+                                        <span>&lt;/&gt;</span>
+                                    </div>
+                                </li>
+
+                                <li data-depth="0.30">
+                                    <div class="parallax__element_ad parallax__element_4_ad">
+                                        <span>&lt;div&gt;</span>
+                                    </div>
+                                </li>
+
+                                <li data-depth="0.30">
+                                    <div class="parallax__element_ad parallax__element_5_ad">
+                                        <span>&lt;div&gt;</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</h2>
+
+                        <p class="price__subtitle">* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
+                    </div>
+                    
+                </section>
+
+        </main>
+
+        <footer class="footer block_flex">
+            <section class="contacts">
+
+                <h2>Мои контакты</h2>
+
+                <div class="container contacts__container block_flex">
+
+                    <div class="main-menu_footer">
+                        <nav class="menu_footer">
+                            <ul class="menu__list_footer">
+                                <li class="menu__item_footer"><a class="menu__link_footer" href="#skill">Услуги</a></li>
+                                <li class="menu__item_footer"><a class="menu__link_footer" href="#portfolio">Портфолио</a></li>
+                                <li class="menu__item_footer"><a class="menu__link_footer" href="#price">Стоимость</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="wrapper block_flex">
+                        <ul class="contacts-list">
+                            <li class="contacts-list__item">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+7(499)995-77-55" class="contacts-list__link contacts-list__link_tel">+7 (499) 995-77-55</a>
+                            </li>
+
+                            <li class="contacts-list__item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:dmitry@alekseev.com" class="contacts-list__link contacts-list__link_mail">dmitry@alekseev.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="wrapper block_flex">
+                        <ul class="right-column">
+                            <li class="right-column__item">
+                                <button type="submit" class="right-column__button call-button popup_call_open">Заказать звонок</button>
+                            </li>
+                            <li class="right-column__item networks">
+                                <ul class="networks__list">
+                                    <li class="networks__item networks__item_vk"><a class="networks__link" href="#"></a></li>
+                                    <li class="networks__item networks__item_facebook"><a class="networks__link" href="#"></a></li>
+                                    <li class="networks__item networks__item_twitter"><a class="networks__link" href="#"></a></li>
+                                    <li class="networks__item networks__item_instagram"><a class="networks__link" href="#"></a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <small class="footer__text_production">© Дмитрий Алексеев, 2016 – 2018</small>
+        </footer>
+
+        <div class="popup popup_call">
+            <div class="popup__body block_flex">
+                <div class="popup__content block_flex">
+                    <div class="popup__top block_flex">
+                        <button type="reset" class="popup__button_exit popup__button_exit_call">
+                            <i class="fa fa-times close" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="popup__form">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <label for="popup__input_name_call" class="popup__header">Имя</label><br>
+                                <input type="text" required name="name" class="popup__input popup__input_name" id="popup__input_name_call" placeholder="Ваше имя?"><br>
+
+                            <label for="popup__input_tel_call" class="popup__header">Телефон</label><br>
+                                <input type="tel" required name="tel" class="popup__input tel-mask popup__input_tel" id="popup__input_tel_call" placeholder="Ваш телефон?" maxlength="10"><br>
+
+                            <input type="submit" value="Отправить" class="popup__input_send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup popup_order">
+            <div class="popup__body block_flex">
+                <div class="popup__content block_flex">
+                    <div class="popup__top block_flex">
+                        <button type="reset" class="popup__button_exit popup__button_exit_order">
+                            <i class="fa fa-times close" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="popup__form">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <label for="popup__input_name_order" class="popup__header">Имя</label><br>
+                                <input type="text" required name="name" class="popup__input popup__input_name" id="popup__input_name_order" placeholder="Ваше имя?"><br>
+
+                            <label for="popup__input_tel_order" class="popup__header">Телефон</label><br>
+                                <input type="tel" required name="tel" class="popup__input tel-mask popup__input_tel" id="popup__input_tel_order" placeholder="Ваш телефон?" maxlength="10"><br>
+
+                            <label for="popup__input_email" class="popup__header">E-mail</label><br>
+                                <input type="email" required name="email" class="popup__input" id="popup__input_email" placeholder="Ваш e-mail?"><br>
+
+                            <label for="popup__input_textarea" class="popup__header">Комментарии</label><br>
+                                <textarea name="textarea" required id="popup__input_textarea" maxlength="500" placeholder="*(не более 500 символов)" rows="5"></textarea>
+
+                            <input type="submit" value="Отправить" class="popup__input_send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
