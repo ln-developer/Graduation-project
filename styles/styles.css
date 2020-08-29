@@ -1,45 +1,37 @@
-/* roboto-regular - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto';   /* font-family устанавливает семейство шрифта*/
-     font-style: normal;      /* font-style определяет начертание шрифта (курсив/наклон/обычное)*/
-     font-weight: 400;        /* font-weight устанавливает насыщенность шрифта (normal/bold/...)*/
-     font-display: swap;      /* font-display опрделяет то, как шрифт будет отображаться в зависимости от его загрузки на странице (swap-браузер сразу показывает текст шрифтом по умолчанию, не показывая пустого экрана, а при полной загрузке нужного шрифта, заменяет его)*/
-     src: local('Roboto'),    /* ссылка на файлы*/
-          url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),   /* не все брузеры поддерживают этот формат, поэтому, если брузер не сможет прочитать этот файл, он пойдет дальше по списку*/
-          url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), 
+     font-family: "Roboto";
+     font-display: swap;
+     src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+          url("../fonts/Roboto-Regular.woff") format("woff");
+     font-weight: 400;
+     font-style: normal;
 }
 
-/* roboto-500 - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto';
-     font-style: normal;
+     font-family: "Roboto";
+     font-display: swap;
+     src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+          url("../fonts/Roboto-Medium.woff") format("woff"); 
      font-weight: 500;
-     font-display: swap;
-     src: local('Roboto Medium'),
-          url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), 
-          url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), 
+     font-style: normal;
 }
 
-/* roboto-700 - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto';
-     font-style: normal;
+     font-family: "Roboto";
+     font-display: swap;
+     src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+          url("../fonts/Roboto-Bold.woff") format("woff"); 
      font-weight: 700;
-     font-display: swap;
-     src: local('Roboto Bold'),
-          url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), 
-          url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), 
+     font-style: normal;
 }
 
-/* roboto-900 - latin_cyrillic */
 @font-face {
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 900;
+     font-family: "Roboto";
      font-display: swap;
-     src: local('Roboto Black'),
-          url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), 
-          url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'),
+     src: url("../fonts/Roboto-Black.woff2") format("woff2"),
+          url("../fonts/Roboto-Black.woff") format("woff");
+     font-weight: 900;
+     font-style: normal;
 }
 
 * {
