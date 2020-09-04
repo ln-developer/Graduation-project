@@ -88,6 +88,10 @@ button:hover {
      cursor: pointer;
 }
 
+.llock {
+	overflow: hidden;
+}
+
 .block_flex {
      display: -webkit-box;
      display: -ms-flexbox;
