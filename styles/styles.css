@@ -88,10 +88,6 @@ button:hover {
      cursor: pointer;
 }
 
-.html_hidden {
-     overflow: hidden;
-}
-
 .block_flex {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -834,6 +830,10 @@ main {
              box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.error {
+     border: 2px solid var(--red) !important;
+}
+
 .popup__top {
      -webkit-box-pack: end;
          -ms-flex-pack: end;
@@ -943,7 +943,6 @@ main {
              flex-grow: 1;
      background-color: var(--white);
      padding: 30px;
-     /*border-radius: 30px;*/
      max-width: 300px;
      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
              box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -961,8 +960,4 @@ main {
      color: var(--pink);
      font-weight: bold;
      text-align: center;
-}
-
-.error {
-     border: 2px solid var(--red);
 }
