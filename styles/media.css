@@ -1,8 +1,4 @@
 @media screen and (max-width: 1024px) {
-    html.llock {
-        overflow: hidden;
-    }
-
     .menu-burger_header_mobile {
         display: block;
         background: none;
@@ -57,7 +53,7 @@
         background-color: white;
         width: 100vw;
         height: 100vh;
-        z-index: 200;
+        z-index: 250;
         top: 0;
         left: -500vh;
         -webkit-transition: left 1s;
