@@ -79,7 +79,7 @@ $(document).ready(function(){
         $('html').removeClass('llock');
     });
 
-    // POPUP&&POPUP-GRADITUDE  
+    // POPUP&&POPUP-GRADITUDE
 
     function popupClose() {
       $('.popup__input').removeClass('error');
@@ -113,16 +113,16 @@ $(document).ready(function(){
       let nameCall = $('#popup__input_name_call').val(),
           telCall = $('#popup__input_tel_call').val();
 
-      if (nameCall.length !== 0 && telCall.length == 16){
+      if (nameCall.length !== 0 && telCall.length !== 0){
           popupClose();
       }
 
-      else if (nameCall.length == 0 && telCall.length == 16){
+      else if (nameCall.length == 0){
           $('#popup__input_name_call').addClass('error');
           return false;
       }
   
-      else if (nameCall.length !== 0 && telCall.length !== 16){
+      else if (telCall.length == 0){
           $('#popup__input_tel_call').addClass('error').val('');
           return false;
       }
@@ -139,6 +139,7 @@ $(document).ready(function(){
     }
 
     $('.popup__input_send_call').on('click', popupOrderCall);
+
 
     //POPUP-ORDER
 
@@ -159,41 +160,23 @@ $(document).ready(function(){
           telOrder = $('#popup__input_tel_order').val(),
           email = $('#popup__input_email').val();
 
-      if (nameOrder.length !== 0 && telOrder.length == 16 && email.length !== 0){
-          popupClose();
+      if (nameOrder.length !== 0 && telOrder.length !== 0 && email.length !== 0){
+          popupOrderOrder();
       }
 
-      else if (nameOrder.length == 0 && telOrder.length == 16 && email.length !== 0){
+      else if (nameOrder.length == 0){
           $('#popup__input_name_order').addClass('error');
           return false;
       }
   
-      else if (nameOrder.length !== 0 && telOrder.length !== 16 && email.length !== 0){
+      else if (telOrder.length == 0){
           $('#popup__input_tel_order').addClass('error').val('');
           return false;
       }
 
-      else if (nameOrder.length !== 0 && telOrder.length == 16 && email.length == 0){
+      else if (email.length == 0){
         $('#popup__input_email').addClass('error');
         return false;
-      }
-
-      else if (nameOrder.length == 0 && telOrder.length !== 16 && email.length !== 0){
-          $('#popup__input_tel_order').addClass('error').val('');
-          $('#popup__input_name_order').addClass('error');
-          return false;
-      }
-
-      else if (nameOrder.length !== 0 && telOrder.length !== 16 && email.length == 0){
-        $('#popup__input_tel_order').addClass('error').val('');
-        $('#popup__input_email').addClass('error');
-        return false;
-      }
-
-      else if (nameOrder.length == 0 && telOrder.length == 16 && email.length == 0){
-          $('#popup__input_name_order').addClass('error');
-          $('#popup__input_email').addClass('error');
-          return false;
       }
   
       else {
@@ -211,7 +194,6 @@ $(document).ready(function(){
 
     // TEL-MASK
 
-    $(function() {
-      $('.tel-mask').mask('+7(000)000-00-00');
-    });
+    $("#popup__input_tel_call").mask("+7(999) 999 99 99");
+    $("#popup__input_tel_order").mask("+7(999) 999 99 99");
 });
