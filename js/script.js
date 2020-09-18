@@ -161,7 +161,7 @@ $(document).ready(function(){
           email = $('#popup__input_email').val();
 
       if (nameOrder.length !== 0 && telOrder.length !== 0 && email.length !== 0){
-          popupOrderOrder();
+          popupClose();
       }
 
       else if (nameOrder.length == 0){
